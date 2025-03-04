@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Header CSS*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 1.6rem;
+  border: 2px solid rgb(6, 0, 0);
+  padding: 8px 12px;
+  margin-top: 45px;
+  margin-left: 7rem;
+}
+
+header p {
+  font-family:"Exo 2", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  color: rgb(0, 0, 0);
+}
+
+/*Front Page CSS*/
+.view {
+  min-height: 100vh;
+  position: relative;
+  background: url(/manufature1.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 150px 0 70px 0;
+  padding-left: 7rem;
+}
+
+.view .content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 2;
+}
+
+.view .content .title {
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+}
+.view .content .sub-title p {
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  line-height: 45px;
+}
+.view .content .sub-title p:last-child {
+  color: #ffb20d;
+}
+.view .content .buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.view .content .buttons button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #000000;
+  border: 1px solid #000000;
+  background: transparent;
+  transition: 0.3s;
+}
+.view .content .buttons button:hover {
+  cursor: pointer;
+  background: #f8b537;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
+/*Work Out Session CSS*/
+.workout_session {
+  min-height: 100vh;
+  display: flex;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+  gap: 75px;
+}
+
+.workout_session .wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.workout_session .wrapper h1 {
+  font-size: 2.2rem;
+  color: #111;
+}
+.workout_session .wrapper p {
+  font-size: 1.4rem;
+  color: gray;
+}
+
+.workout_session .wrapper .bootcamp {
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.workout_session .wrapper .bootcamp div {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px 10px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.workout_session .wrapper .bootcamp div:hover {
+  background: #111;
+  transition: 0.3s;
+}
+
+.workout_session .wrapper .bootcamp div:hover h4 {
+  color: #ff9100;
+  transition: 0.3s;
+}
+.workout_session .wrapper .bootcamp div:hover p {
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
+/*Galley Images*/
+
+.gallery {
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 0 50px 0;
+}
+
+.gallery h1 {
+  color: #ff8800;
+  font-size: 2.2rem;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+.gallery .images {
+  display: flex;
+  gap: 15px;
+  max-width: 1500px;
+  min-width: 1500px;
+  margin: 0 auto;
+}
+
+.gallery .images div {
+  flex: 1;
+}
+.gallery .images img {
+  width: 100%;
+  height: auto;
+}
+
+
+.contact {
+  min-height: 800px;
+  background: url(/manufature.jpg) rgba(0, 0, 0, 0.75);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 7rem;
+}
+.contact form {
+  background: whitesmoke;
+  width: 650px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 20px;
+}
+.contact form div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contact form div label {
+  font-weight: 500;
+}
+.contact form div input {
+  font-size: 20px;
+  padding: 7px 3px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background: transparent;
+}
+.contact form div input:focus {
+  outline: none;
+}
+.contact form button {
+  border: none;
+  color: whitesmoke;
+  background: #0095ff;
+  padding: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.contact form button:hover {
+  transition: 0.3s;
+  background: #0267af;
+  cursor: pointer;
+}
+
+
+/*Footer CSS*/
+footer {
+  padding: 20px;
+  background: #111;
+  text-align: center;
+  font-size: 20px;
+  color: #f0b608;
+}
