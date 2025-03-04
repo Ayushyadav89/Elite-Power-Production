@@ -1,5 +1,4 @@
 # Elite-Power-Production
-# Elite Manufacturing Website
 
 ## Overview
 The **Elite Manufacturing Website** is a web-based platform that showcases the **power plant of an industry**. This project is built using modern web technologies, providing a seamless and interactive experience for users. It includes a **contact form** that allows customers to submit their details, which are then sent to the **admin user** via email.
@@ -44,7 +43,7 @@ Once submitted, the details are sent to the **admin user** through an email noti
    ```
 3. **Start the Frontend**
    ```bash
-   npm start
+   npm run dev
    ```
 4. **Install Backend Dependencies**
    ```bash
@@ -53,7 +52,7 @@ Once submitted, the details are sent to the **admin user** through an email noti
    ```
 5. **Start the Backend**
    ```bash
-   npm run server
+   npm run dev
    ```
 
 ## How It Works
