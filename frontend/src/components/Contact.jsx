@@ -16,7 +16,7 @@ const Contact = () => {
 
         try {
             const { data } = await axios.post(
-                "http://localhost:4000/send/mail",
+                "https://elite-power-production-backend.onrender.com",
                 {
                     name,
                     email,
